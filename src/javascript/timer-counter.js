@@ -22,13 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const timeCount = () => {
     let now = new Date()
-    console.log(now);
 
     let leftUntil = birthday - now
 
     let mounths = Math.floor(leftUntil / 1000 / 60 / 60 / 24 / 7)
     let days = Math.floor(leftUntil / 1000 / 60 / 60 / 24) % 7
-    console.log("days", days);
     let hours = Math.floor(leftUntil / 1000 / 60 / 60) % 24
     let minutes = Math.floor(leftUntil / 1000 / 60) % 60
     let seconds = Math.floor(leftUntil / 1000) % 60

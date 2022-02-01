@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "gsap": "^3.9.1",
+    "type": "module"
+  }
+}
