@@ -9,6 +9,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  transform-style: preserve-3d;
 }
 
 .visually-hidden {
@@ -22,6 +23,11 @@ body{
   clip: rect(0 0 0 0);
 }
 
+.content{
+  transform-style: preserve-3d;
+  transform: perspective(1000px)
+}
+
 .time-count{
   background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
   background-position: top;
@@ -32,6 +38,7 @@ body{
   width: 656px;
   height: 300px;
   padding: 73px 86px;
+  transform-style: preserve-3d;
 }
 
 .time-count_title{
@@ -52,6 +59,9 @@ body{
 
 .time-count_item{
   text-align: center;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transform-style: preserve-3d;
 }
 
 .time-count_value{
@@ -60,6 +70,7 @@ body{
   line-height: 82px;
   color: #448ccc;
   text-align: center;
+  transform: translateZ(20px)
 }
 
 .time-count_separator{
@@ -78,22 +89,11 @@ body{
   line-height: 20px;
   text-align: center;
   color: #fff;
+  transform: translateZ(-70px);
 }
 
-.video{
-  position: relative;
-  padding-bottom: 56.25%;
-}
-
-.video_media{
-  filter: contrast(50%);
-  background-size: cover;
-  height: auto;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  position:fixed;
+.js-tilt-glare{
+  border-radius: 30px;
 }
 
 @media only screen and (max-width: 1250px) {
