@@ -38,7 +38,7 @@ body{
   width: 656px;
   height: 300px;
   padding: 73px 86px;
-  transform-style: preserve-3d;
+  transform-style: preserve-3d
 }
 
 .time-count_title{
@@ -70,7 +70,7 @@ body{
   line-height: 82px;
   color: #448ccc;
   text-align: center;
-  transform: translateZ(20px)
+  transform: translateZ(20px);
 }
 
 .time-count_separator{
