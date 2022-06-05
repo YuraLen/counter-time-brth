@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const birthday = new Date("Jun 01 2022 00:00:00");
+  const birthday = new Date("Jun 01 2023 00:00:00");
 
   const weeksVal = document.querySelector(`.time-count_weeks .time-count_value`)
   const daysVal = document.querySelector(`.time-count_days .time-count_value`)
